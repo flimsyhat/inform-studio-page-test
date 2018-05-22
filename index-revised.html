@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>Inform Studio</title>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="tachyons.css">
+  <style>
+    .mw-image {
+      max-width: 34rem;
+    }
+    .image-container {
+      padding-bottom:100%;
+      height:0;
+      position:relative;
+      overflow: hidden;
+      transform: scale(1.001); /* fixes border width issue */
+    }
+    .thumb-image {
+      width:100%;
+      height:100%;
+      display:block;
+      position:absolute;
+    }
+    .copyright {
+      margin-bottom: 1.25rem !important;
+    }
+    @media screen and (min-width: 30em) and (max-width: 60em) {
+      .f-inform-m {
+        font-size: 4rem;
+      }
+    }
+    @media screen and (min-width: 60em) {
+      .grid-l {
+        max-width: 76rem;
+      }
+      html {
+        /* font-size: 13px; */
+      }
+    }
+  </style>
+</head>
+<body class="sans-serif w-100 center black-70 f6 bg-white pa2 relative">
+  <div class="mw9-l mw8-m center pl4-l pr4-l mt4-l mt3-m mt2">
+    <!-- originally mt5-ns -->
+    <div class="center mw6-l mw5-m pr5-l pl5-l pa0-m pr5 pl5"><img src="images/logo-01.png" class="w-100"></div>
+    <!-- <div class="center mw6-l mw5-m pr5-l pl5-l pa0-m pr5 pl5"><img src="images/logo-idea-2-07.svg" class="w-100"></div> -->
+    <!-- <p class="f-headline-l f-inform-m f2 fw8 black tc ma0"><b>inform</b></p> -->
+    <p class="tc f3-l f4-m f5 mw9-l mw7 mt0 center pl2-ns pr2-ns dark-gray pl3 pr3 mb4">Scientific illustration and animation studio</p>
+    <div class="w-100 mw6 tc center">
+      <a class="f6 link dim ph3 pv3 mb2 dib dark-gray bg-lightest-blue ba b--gray v-mid w-30" href="#0"><p class="f3-ns f4 ma0">Work</p></a>
+      <a class="f6 link dim ph3 pv3 mb2 dib dark-gray bg-lightest-blue ba b--gray v-mid w-30" href="#0"><p class="f3-ns f4 ma0">About</p></a>
+      <a class="f6 link dim ph3 pv3 mb2 dib dark-gray bg-lightest-blue ba b--gray v-mid w-30" href="#0"><p class="f3-ns f4 ma0">Blog</p></a>
+      <a class="f6 link dim ph3 pv2 mb2 dib dark-gray bg-white ba b--gray v-mid w-30" href="#0"><img class="w-100 mw3 v-mid" style="padding: 0.35rem 0" src="mail.svg"></a>
+      <a class="f6 link dim ph3 pv2 mb2 dib dark-gray bg-white ba b--gray v-mid w-30" href="#0"><img class="w-100 mw2 v-mid" style="padding: 0.35rem 0" src="images/logos/instagram_simple_icon.svg"></a>
+      <a class="f6 link dim ph3 pv2 mb2 dib dark-gray bg-white ba b--gray v-mid w-30" href="#0"><img class="w-100 mw2 v-mid" style="padding: 0.35rem 0" src="images/logos/twitter.svg"></a>
+      <!-- <div class="mw3 w-100 dim pr3 pl2 fr"><a href="https://www.instagram.com/inform_science_studio/" class="o-70"><img src="images/logos/instagram_simple_icon.svg"></a></div>
+      <div class="mw3 w-100 dim pl3 pr2 fr"><a href="https://twitter.com/inform_studio" class="o-70"><img src="images/logos/twitter.svg"></a></div> -->
+    </div>
+    <!-- <p class="tc mt5-ns mt5 f3-ns f4">We specialize in:</p> -->
+    <!-- <div class="relative tc w-100 mw6 center"><p class="tc bg-yellow absolute pa2 w-100 ma0">Under construction - check back soon for more details.</p></div> -->
+    <!-- <div class="cf grid-l mw7 center pb3 pt3-ns">
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa4 pb2 pa3-l pa2-m">
+        <a href="journal-covers.html" class="dark-gray">
+          <div class="relative ba b--gray grow pointer image-container br3 ">
+            <img src="images/cover-thumb.jpg" class="thumb-image">
+            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Journal Covers</h4></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa4 pb2 pa3-l pa2-m">
+        <a href="infographics.html" class="dark-gray">
+          <div class="relative ba b--gray grow pointer image-container br3">
+            <img src="images/prospect-diagram.jpg" class="thumb-image">
+            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Infographics</h4></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa4 pb2 pa3-l pa2-m">
+        <a href="scientific-illustration.html" class="dark-gray">
+          <div class="relative ba b--gray grow pointer image-container br3 ">
+            <img src="images/parafermions.jpg" class="thumb-image">
+            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Scientific Illustration</h4></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa4 pb2 pa3-l pa2-m">
+        <a href="explanatory-animation.html" class="dark-gray">
+          <div class="relative ba b--gray grow pointer image-container br3 ">
+            <img src="images/moebius.gif" class="thumb-image">
+            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Explanatory Animation</h4></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa4 pb2 pa3-l pa2-m">
+        <a href="data-visualization.html" class="dark-gray">
+          <div class="relative ba b--gray grow pointer image-container br3 ">
+            <img src="images/dots.jpg" class="thumb-image">
+            <div class="bg-white absolute w-100 bottom-0  bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Data Visualization</h4></div>
+          </div>
+        </a>
+      </div>
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa4 pb2 pa3-l pa2-m">
+        <a href="interaction-development.html" class="dark-gray">
+          <div class="relative ba b--gray grow pointer image-container br3 ">
+            <img src="images/test.gif" class="thumb-image">
+            <div class="bg-white absolute w-100 bottom-0  bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Interaction Development</h4></div>
+          </div>
+        </a>
+      </div>
+    </div> -->
+    <!-- <p class="tc mt4-ns mt4 mb0 f3-ns f3 dark-gray">Interested in working together?</p>
+    <p class="f5-ns f6 tc pb3"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Get in touch<span><img src="mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p> -->
+  </div>
+  <div class="mt4 mt4-ns">
+    <!-- <div class="center mw4 mb2 pl2 pr2 pb4 copyright w-100">
+      <div class="w-50 pa2 pl3 dim fl"><a href="https://twitter.com/inform_studio" class="o-70"><img src="images/logos/twitter.svg"></a></div>
+      <div class="w-50 pa2 pr3 dim fl"><a href="https://www.instagram.com/inform_science_studio/" class="o-70"><img src="images/logos/instagram_simple_icon.svg"></a></div>
+    </div> -->
+    <!-- <div class="center mw6-l">
+      <p class="tc f7 gray mt2">© 2018 Inform Studio</p>
+    </div> -->
+  </div>
+</body>
