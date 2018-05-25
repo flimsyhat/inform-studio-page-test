@@ -7,6 +7,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="tachyons.css">
   <style>
+  @media screen and (min-width: 30em) {
     .bg-lightest-gray {
       background-color: #fafafa;
     }
@@ -14,8 +15,9 @@
       background-color: #fcfcfc;
     }
     .b--lighter-gray {
-      border-color: #fcfcfc;
+      border-color: #fcfcfc !important;
     }
+  }
   </style>
 </head>
 <body class="sans-serif w-100 center black-70 f6 bg-white">
@@ -81,9 +83,9 @@
       <p class="f6 tc b mb1">Building a quantum computer with atomic ions</p>
       <p class="f7 tc mt0">Client: Joint Quantum Institute</p>
     </div>
-    <div class=" absolute h-50 bg-lighter-gray w-100 center bottom-0 bt b--moon-gray"></div>
+    <div class="absolute h-50 bg-lighter-gray w-100 center bottom-0 bt b--moon-gray"></div>
   </section>
-  <section class="w-100 bg-lighter-gray bt b--lighter-gray pb6-ns pb5">
+  <section class="w-100 bg-lighter-gray bt b--lighter-gray pb6-ns pb5 b--white">
     <div class="mw8 w-100 center">
       <p class="tc mb0 f2-ns f3 dark-gray mt4">Have a project in mind?</p>
       <p class="f5 tc"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Let us know<span><img src="images/mail.svg" class="w2 ml1"></span></a> and we'll get to work.</p>
