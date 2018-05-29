@@ -7,22 +7,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="tachyons.css">
   <style>
-    .mw-image {
-      max-width: 32rem;
-    }
-    .image-container {
-      padding-bottom:100%;
-      height:0;
-      position:relative;
-      overflow: hidden;
-      transform: scale(1.001); /* fixes border width issue */
-    }
-    .thumb-image {
-      width:100%;
-      height:100%;
-      display:block;
-      position:absolute;
-    }
     .copyright {
       margin-bottom: 1.25rem !important;
     }
@@ -43,6 +27,22 @@
       html {
         font-size: 13px;
       }
+      .mw-image {
+        max-width: 32rem;
+      }
+      .image-container {
+        padding-bottom:100%;
+        height:0;
+        position:relative;
+        overflow: hidden;
+        transform: scale(1.001); /* fixes border width issue */
+      }
+      .thumb-image {
+        width:100%;
+        height:100%;
+        display:block;
+        position:absolute;
+      }
     }
   </style>
 </head>
@@ -62,99 +62,92 @@
       </div>
     </div>
     <div class="cf grid-l mw8 center pb3 pt5-ns pt3">
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa2 pa3 dn db-ns">
-        <a href="journal-covers.html" class="dark-gray">
-          <div class="relative ba b--gray grow pointer image-container br3">
-            <img src="images/cover-thumb.jpg" class="thumb-image">
-            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Journal Covers</h4></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-100 center dn-ns mb3">
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="journal-covers.html" class="dark-gray no-underline">
-          <div class="relative bl bt bb b--moon-gray pointer dt">
-            <img src="images/cover-thumb.jpg" class="dtc w-100 br b--moon-gray">
-            <div class="w-70 dtc v-mid"><p class="f5 pl3">Journal Covers</p></div>
+          <div class="relative ba b--gray grow pointer image-container br3-ns dt db-ns w-100">
+            <picture>
+              <source media="(max-width: 480px)"
+                      srcset="images/index/nphotonics-mobile@1x.jpg 1x, images/index/nphotonics-mobile@2x.jpg 2x">
+              <img src="images/index/nphotonics@1x.jpg"
+                   srcset="images/index/nphotonics@1x.jpg 1x, images/index/nphotonics@2x.jpg 2x"
+                   alt="Nature Photonics cover illustration."
+                   class="thumb-image dtc db-ns w-100">
+            </picture>
+            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-ns b--moon-gray dtc db-ns v-mid w-70"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Journal Covers</p></div>
           </div>
         </a>
       </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3 dn db-ns">
-        <a href="technical-graphics.html" class="dark-gray">
-          <div class="relative ba b--gray grow pointer image-container br3">
-            <img src="images/prospect-diagram.jpg" class="thumb-image">
-            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Technical Graphics</h4></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-100 center dn-ns mb3">
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="technical-graphics.html" class="dark-gray no-underline">
-          <div class="relative bl bt bb b--moon-gray pointer dt">
-            <img src="images/prospect-diagram.jpg" class="dtc w-100 br b--moon-gray">
-            <div class="w-70 dtc v-mid"><p class="f5 pl3">Technical Graphics</p></div>
+          <div class="relative ba b--gray grow pointer image-container br3-ns dt db-ns w-100">
+            <picture>
+              <source media="(max-width: 480px)"
+                      srcset="images/index/prospect_diagram-mobile@1x.jpg 1x, images/index/prospect_diagram-mobile@2x.jpg 2x">
+              <img src="images/index/prospect_diagram@1x.jpg"
+                   srcset="images/index/prospect_diagram@1x.jpg 1x, images/index/prospect_diagram@2x.jpg 2x"
+                   alt="Diagram of PROSPECT experiment."
+                   class="thumb-image dtc db-ns w-100">
+            </picture>
+            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Technical Graphics</p></div>
           </div>
         </a>
       </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa2 pa3 dn db-ns">
-        <a href="scientific-illustration.html" class="dark-gray">
-          <div class="relative ba b--gray grow pointer image-container br3 ">
-            <img src="images/parafermions.jpg" class="thumb-image">
-            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Scientific Illustration</h4></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-100 center dn-ns mb3">
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="scientific-illustration.html" class="dark-gray no-underline">
-          <div class="relative bl bt bb b--moon-gray pointer dt">
-            <img src="images/parafermions.jpg" class="dtc w-100 br b--moon-gray">
-            <div class="w-70 dtc v-mid"><p class="f5 pl3">Scientific Illustration</p></div>
+          <div class="relative ba b--gray grow pointer image-container br3-ns dt db-ns w-100">
+            <picture>
+              <source media="(max-width: 480px)"
+                      srcset="images/index/parafermions-mobile@1x.jpg 1x, images/index/parafermions-mobile@2x.jpg 2x">
+              <img src="images/index/parafermions@1x.jpg"
+                   srcset="images/index/parafermions@1x.jpg 1x, images/index/parafermions@2x.jpg 2x"
+                   alt="Illustration of parafermions."
+                   class="thumb-image dtc db-ns w-100">
+            </picture>
+            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Scientific Illustration</p></div>
           </div>
         </a>
       </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa2 pa3 dn db-ns">
-        <a href="explanatory-animation.html" class="dark-gray">
-          <div class="relative ba b--gray grow pointer image-container br3 ">
-            <img src="images/moebius.gif" class="thumb-image">
-            <div class="bg-white absolute w-100 bottom-0 bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Explanatory Animation</h4></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-100 center dn-ns mb3">
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="explanatory-animation.html" class="dark-gray no-underline">
-          <div class="relative bl bt bb b--moon-gray pointer dt">
-            <img src="images/moebius.gif" class="dtc w-100 br b--moon-gray">
-            <div class="w-70 dtc v-mid"><p class="f5 pl3">Explanatory Animation</p></div>
+          <div class="relative ba b--gray grow pointer image-container br3-ns dt db-ns w-100">
+            <picture>
+              <source media="(max-width: 480px)"
+                      srcset="images/index/moebius-mobile@1x.jpg 1x, images/index/moebius-mobile@2x.jpg 2x">
+              <img src="images/index/moebius.gif"
+                   alt="Animation of cylinder turning into a moebius strip."
+                   class="thumb-image dtc db-ns w-100">
+            </picture>
+            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Explanatory Animation</p></div>
           </div>
         </a>
       </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa2 pa3 dn db-ns">
-        <a href="data-visualization.html" class="dark-gray">
-          <div class="relative ba b--gray grow pointer image-container br3 ">
-            <img src="images/dots.jpg" class="thumb-image">
-            <div class="bg-white absolute w-100 bottom-0  bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Data Visualization</h4></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-100 center dn-ns mb3">
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="data-visualization.html" class="dark-gray no-underline">
-          <div class="relative bl bt bb b--moon-gray pointer dt">
-            <img src="images/dots.jpg" class="dtc w-100 br b--moon-gray">
-            <div class="w-70 dtc v-mid"><p class="f5 pl3">Data Visualization</p></div>
+          <div class="relative ba b--gray grow pointer image-container br3-ns dt db-ns w-100">
+            <picture>
+              <source media="(max-width: 480px)"
+                      srcset="images/index/dots-mobile@1x.jpg 1x, images/index/dots-mobile@2x.jpg 2x">
+              <img src="images/index/dots@1x.jpg"
+                   srcset="images/index/dots@1x.jpg 1x, images/index/dots@2x.jpg 2x"
+                   alt="Visualization of quantum dots."
+                   class="thumb-image dtc db-ns w-100">
+            </picture>
+            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Data Visualization</p></div>
           </div>
         </a>
       </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa2 pa3 dn db-ns">
-        <a href="interaction-development.html" class="dark-gray">
-          <div class="relative ba b--gray grow pointer image-container br3 ">
-            <img src="images/test.gif" class="thumb-image">
-            <div class="bg-white absolute w-100 bottom-0  bt b--moon-gray"><h4 class="tc pa3 ma0 f4-l f5">Interaction Development</h4></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-100 center dn-ns mb3">
+      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="interaction-development.html" class="dark-gray no-underline">
-          <div class="relative bl bt bb b--moon-gray pointer dt">
-            <img src="images/test.gif" class="dtc w-100 br b--moon-gray">
-            <div class="w-70 dtc v-mid"><p class="f5 pl3">Interaction Development</p></div>
+          <div class="relative ba b--gray grow pointer image-container br3-ns dt db-ns w-100">
+            <picture>
+              <source media="(max-width: 480px)"
+                      srcset="images/index/interaction-mobile@1x.jpg 1x, images/index/interaction-mobile@2x.jpg 2x">
+              <img src="images/index/interaction@1x.gif"
+                   srcset="images/index/interaction@1x.gif 1x, images/index/interaction@2x.gif 2x"
+                   alt="Short animation of bloch sphere interactive."
+                   class="thumb-image dtc db-ns w-100">
+            </picture>
+            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Interaction Development</p></div>
           </div>
         </a>
       </div>
