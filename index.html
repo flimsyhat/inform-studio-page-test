@@ -135,6 +135,12 @@
        -webkit-box-shadow: inset 0 0 40px 20px #ffffff;
        box-shadow:         inset 0 0 40px 20px #ffffff;
     }
+    .card-shadow {
+      box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
+    }
+    .card {
+      transition: box-shadow 135ms cubic-bezier(.4,0,.2,1),width 235ms cubic-bezier(.4,0,.2,1);
+    }
   </style>
 </head>
 <body class="sans-serif w-100 center black-70 f6 bg-white pl2-ns pr2-ns relative">
@@ -172,7 +178,7 @@
       <div class="grid-l w-100 center pt4-l pt3-m pt0">
       <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="journal-covers.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns shadow-4-ns">
+          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
             <picture>
               <source media="(max-width: 480px)"
                       srcset="images/index/nphotonics-mobile@1x.jpg 1x, images/index/nphotonics-mobile@2x.jpg 2x">
@@ -187,7 +193,7 @@
       </div>
       <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="technical-graphics.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns shadow-4-ns">
+          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
             <picture>
               <source media="(max-width: 480px)"
                       srcset="images/index/prospect_diagram-mobile@1x.jpg 1x, images/index/prospect_diagram-mobile@2x.jpg 2x">
@@ -202,7 +208,7 @@
       </div>
       <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="scientific-illustration.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns shadow-4-ns">
+          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
             <picture>
               <source media="(max-width: 480px)"
                       srcset="images/index/parafermions-mobile@1x.jpg 1x, images/index/parafermions-mobile@2x.jpg 2x">
@@ -217,7 +223,7 @@
       </div>
       <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="explanatory-animation.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns shadow-4-ns">
+          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
             <picture>
               <source media="(max-width: 480px)"
                       srcset="images/index/moebius-mobile@1x.jpg 1x, images/index/moebius-mobile@2x.jpg 2x">
@@ -231,7 +237,7 @@
       </div>
       <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="data-visualization.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns shadow-4-ns">
+          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
             <picture>
               <source media="(max-width: 480px)"
                       srcset="images/index/dots-mobile@1x.jpg 1x, images/index/dots-mobile@2x.jpg 2x">
@@ -246,7 +252,7 @@
       </div>
       <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
         <a href="interaction-development.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns shadow-4-ns">
+          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
             <picture>
               <source media="(max-width: 480px)"
                       srcset="images/index/interaction-mobile@1x.jpg 1x, images/index/interaction-mobile@2x.jpg 2x">
