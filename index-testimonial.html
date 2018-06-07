@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="tachyons.min.css">
+  <link rel="stylesheet" href="slick-theme.css">
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="slick-additions.css">
   <style>
     .b--lighter-gray {
       border-color: #fcfcfc !important;
@@ -286,8 +289,67 @@
       </div>
     </div>
     </div>
+    <section class="pt mt4-ns mt3 w-100 mw9 center pb4-ns pb3 relative testimonials-l">
+      <!-- <div class="center grid-l bt b--light-gray"></div> -->
+      <noscript><div class="pb5 w-100"></div><div class="pb3 w-100"></div></noscript>
+      <div class="absolute w-20 h-100 left-0 cover-left-slider z-max"></div>
+      <div class="absolute w-20 h-100 right-0 cover-right-slider z-max"></div>
+      <div class="center slider dt z-1 mt4">
+        <div class="w-33 dtc pa4">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-lighter-gray absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-33 dtc pa4 slick-center">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-white absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-33 dtc pa4">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-white absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-33 dtc pa4 hidden">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-white absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <noscript>
+        <p class="tc w-100 tc f6-ns f7 gray mb4 pb2 pt2 z-max relative"><a href="#" class="gray">Read more testimonials</a></p></div>
+      </noscript>
+    </section>
     <section class="pt1 mt0-ns mt3 w-100 grid-l center pb5-ns pb3">
-      <p class="tc mt5-ns mt2 mb0 f1-l f2-m f3 dark-gray">Interested in working together?</p>
+      <p class="tc mt0-ns mt2 mb0 f1-l f2-m f3 dark-gray">Interested in working together?</p>
       <p class="f3-l f4-m f5 tc pb4"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
     </section>
   </div>
@@ -296,4 +358,21 @@
       <p class="tc f7 gray mt2 mb0">© 2018 Inform Studio</p>
     </div>
   </div>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('.slider').removeClass("hidden")
+    $('.slider').slick({
+    centerMode: true,
+    initialSlide: 1,
+    infinite: false,
+    dots: true,
+    arrows: false,
+    centerPadding: '0',
+    slidesToShow: 3,
+    });
+});
+  </script>
 </body>
