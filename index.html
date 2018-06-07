@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="tachyons.min.css">
+  <!-- <link rel="stylesheet" href="slick-theme.css">
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="slick-additions.css"> -->
   <style>
     .b--lighter-gray {
       border-color: #fcfcfc !important;
@@ -19,6 +22,9 @@
     .copyright {
       margin-bottom: 1.25rem !important;
     }
+    .slick-prev:before, .slick-next:before{
+    color:red;
+}
     .gradient {
       background-image: linear-gradient(180deg, #fafafa 0%, #cccccc 100%);
     }
@@ -31,6 +37,9 @@
       }
       .grid-l {
         max-width: 76rem;
+      }
+      .testimonials-l {
+        max-width: 86rem;
       }
       .hero {
         left: -4.5% !important;
@@ -114,6 +123,13 @@
         -ms-transform:scale(1.03);
         transform:scale(1.03);
       }
+      .expand-head {
+        margin-top: 1rem;
+        -webkit-transform:scale(1.07);
+        -moz-transform:scale(1.07);
+        -ms-transform:scale(1.07);
+        transform:scale(1.07);
+      }
     }
     .hero {
       position: absolute;
@@ -127,8 +143,14 @@
     .cover-left {
       background-image: linear-gradient(to right, white, transparent 100%);
     }
+    .cover-left-slider {
+      background-image: linear-gradient(to right, white 10%, transparent 100%);
+    }
     .cover-right {
       background: linear-gradient(to left, white, transparent 100%);
+    }
+    .cover-right-slider {
+      background: linear-gradient(to left, white 10%, transparent 100%);
     }
     .shadow {
        -moz-box-shadow:    inset 0 0 40px 20px #ffffff;
@@ -144,7 +166,7 @@
   </style>
 </head>
 <body class="sans-serif w-100 center black-70 f6 bg-white pl2-ns pr2-ns relative">
-  <header class="center grid-l w-100 mt4-l mt3-m mt1 pb0 overflow-auto">
+  <header class="center w-100 mt4-l mt3-m mt2 pb0 overflow-auto">
     <div class="grid-l center">
     <div class="fl-ns center mw5-ns pa4-l pt0-l pr5-m absolute-ns mw4"><img src="images/logos/logo-mobile.svg" class="w-100 shrink"></div>
     <div class="w-100 mw6 tc center fr bt bb bn-ns b--dark-gray">
@@ -158,7 +180,7 @@
     </div>
   </header>
   <div class="center pl4-l pr4-l">
-    <section class="w-100 mt0 pb4-ns pb2 pl4-l grid-l center bg-white bt-ns bb-ns b--moon-gray overflow-hidden relative mb3-ns mb0" style="z-index: 100;">
+    <section class="w-100 mt0 pb4-ns pb2 pl4-l grid-l center bg-white bt-ns bb-ns b--moon-gray overflow-hidden relative mb3-ns mb0 br2" style="z-index: 100;">
       <div class="w-50-l tr tl-l w-100 right-0 h-100 bg-gray absolute fadein dn db-ns">
         <img src="images/index/hero-image-1.jpg" id="f1">
         <img src="images/index/hero-image-2.jpg" id="f2">
@@ -172,7 +194,7 @@
         </div>
       </div>
     </section>
-    <div class="cf center mw9-l mw8 pl0-ns pr0-ns pl2 pr2 pb4-l pb3 relative shadow bg-lighter-gray expand">
+    <div class="cf center mw9-l mw8 pl0-ns pr0-ns pl2 pr2 pb4-l pb3 relative shadow bg-lighter-gray">
       <div class="absolute w-20 h-100 left-0 cover-left z-99"></div>
       <div class="absolute w-20 h-100 right-0 cover-right z-99"></div>
       <div class="grid-l w-100 center pt4-l pt3-m pt0">
@@ -267,8 +289,67 @@
       </div>
     </div>
     </div>
-    <section class="pt1 mt5-ns mt3 w-100 grid-l center pb5-ns pb3">
-      <p class="tc mt4-ns mt2 mb0 f1-l f2-m f3 dark-gray">Interested in working together?</p>
+    <!-- <section class="pt mt4-ns mt3 w-100 mw9 center pb4-ns pb3 relative testimonials-l">
+      <div class="center grid-l bt b--light-gray"></div>
+      <noscript><div class="pb5 w-100"></div><div class="pb3 w-100"></div></noscript>
+      <div class="absolute w-20 h-100 left-0 cover-left-slider z-max"></div>
+      <div class="absolute w-20 h-100 right-0 cover-right-slider z-max"></div>
+      <div class="center slider dt z-1 mt4">
+        <div class="w-33 dtc pa4">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-lighter-gray absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-33 dtc pa4 slick-center">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-white absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-33 dtc pa4">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-white absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-33 dtc pa4 hidden">
+          <div class="bg-white card-shadow v-mid center relative ba b--moon-gray br2">
+            <div class="center">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 center ba b--moon-gray pa1 bg-white absolute" style="margin-top: -4rem; left: 50%; transform: translate(-50%, 0)" alt="avatar">
+              <div class="pa4 pt5 tc">
+                <h2 class="f5 f4-ns mw6 mb1">Sean Kelley</h2>
+                <h2 class="f6-ns f7 v-bottom ma0 black-60">Illustration, Animation, Development</h2>
+                <p class="f5-ns f6 lh-copy mw6 tl i mt4">"Sean has a background in physics and a passion for open-source creative software. Sean has a background in physics and a passion for open-source creative software."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <noscript>
+        <p class="tc w-100 tc f6-ns f7 gray mb4 pb2 pt2 z-max relative"><a href="#" class="gray">Read more testimonials</a></p></div>
+      </noscript>
+    </section> -->
+    <section class="pt1 mt0-ns mt3 w-100 grid-l center pb5-ns pb3">
+      <p class="tc mt5-ns mt2 mb0 f1-l f2-m f3 dark-gray">Interested in working together?</p>
       <p class="f3-l f4-m f5 tc pb4"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
     </section>
   </div>
@@ -277,4 +358,21 @@
       <p class="tc f7 gray mt2 mb0">© 2018 Inform Studio</p>
     </div>
   </div>
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('.slider').removeClass("hidden")
+    $('.slider').slick({
+    centerMode: true,
+    initialSlide: 1,
+    infinite: false,
+    dots: true,
+    arrows: false,
+    centerPadding: '0',
+    slidesToShow: 3,
+    });
+});
+  </script> -->
 </body>
