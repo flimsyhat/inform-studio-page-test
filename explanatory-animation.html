@@ -18,6 +18,23 @@
       border-color: #fcfcfc !important;
     }
   }
+  .card-shadow {
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
+  }
+  @media screen and (min-width: 60em) {
+    .drumhead {
+      top: 50%; transform: translate(0%,-50%);
+    }
+    .padding-drumhead {
+      padding-right: 16rem;
+    }
+  }
+  @media screen and (max-width: 660px) {
+    .iframe-form {
+      margin-top: -2rem !important;
+      height: 900px;
+    }
+  }
   </style>
 </head>
 <body class="sans-serif w-100 center black-70 f6 bg-white">
@@ -33,77 +50,90 @@
       </div>
     </div>
   </section>
-  <section class="bt b--moon-gray w-100 mt0 pb5-ns pb0 relative bg-lightest-gray">
+  <section class="bt b--moon-gray w-100 mt0 pb5-ns pb4 relative bg-lightest-gray">
     <div class="mw8 w-100 center pa2 pr4-l pl4-l">
       <p class="f2-ns f3 mw6 center tc-ns mt5-ns mt4 lh-copy mb3">Sometimes words fall short.</p>
       <p class="f4-ns f5 mw6 center mt4 lh-copy">Even with an eloquent vocabulary, it can be difficult to describe how something looks—especially when dealing with a complex process or unfamiliar phenomenon.</p>
       <p class="f4-ns f5 mw6 center mt4 lh-copy">An appropriate animation can fill conceptual gaps, supporting a description by providing hard-to-visualize details.</p>
-      <div class="w-100 dt-l mt5">
-        <div class="w-40-l w-100 dtc-l v-mid lh-copy ma4 pa4 pt2 pb2 ma0-l mt0-l mw6 center ba b--moon-gray bg-lighter-gray shadow-3"><h4 class="tc">Drumhead modes</h4><p><span class="b">"</span>A two-dimensional elastic membrane under tension can support transverse vibrations. The properties of an idealized drumhead can be modeled by the vibrations of a circular membrane of uniform thickness, attached to a rigid frame. Due to the phenomenon of resonance, at certain vibration frequencies, its resonant frequencies, the membrane can store vibrational energy, the surface moving in a characteristic pattern of standing waves. This is called a normal mode. A membrane has an infinite number of these normal modes, starting with a lowest frequency one called the fundamental mode.<span class="b">"</span></p>
+      <div class="w-100 mt5-ns mt4 mw7 center relative padding-drumhead">
+        <div class="lh-copy ma4 pa4 pt2 pb2 mt0-l mw6 center ba b--moon-gray bg-lighter-gray card-shadow"><h4 class="tc">Drumhead modes</h4><p><span class="b">"</span>A two-dimensional elastic membrane under tension can support transverse vibrations. The properties of an idealized drumhead can be modeled by the vibrations of a circular membrane of uniform thickness, attached to a rigid frame. Due to the phenomenon of resonance, at certain vibration frequencies, its resonant frequencies, the membrane can store vibrational energy, the surface moving in a characteristic pattern of standing waves. This is called a normal mode. A membrane has an infinite number of these normal modes, starting with a lowest frequency one called the fundamental mode.<span class="b">"</span></p>
           <p class="tr pr4 f7">Source: <a href="https://en.wikipedia.org/wiki/Vibrations_of_a_circular_membrane" target="_blank">Wikipedia</a></p>
         </div>
-        <div class="w-20-l w-100 dtc-l center mw6 v-mid tc mb0"><h2 class="mt0">versus</h2></div>
-        <div class="w-40-l w-100 dtc-l v-mid pa4 pa0-l pt2 center mw6">
+        <!-- <div class="w-20-l w-100 dtc-l center mw6 v-mid tc mb0"><h2 class="mt0">versus</h2></div> -->
+        <div class="pa0-l pt2 mw6 absolute-l drumhead right-0-l center">
           <img src="images/animation/drumhead@1x.gif"
                srcset="images/animation/drumhead@1x.gif 1x, images/animation/drumhead@2x.gif 2x"
                alt="Animation of drumhead mode."
-               class="center ba b--moon-gray bg-lighter-gray shadow-3 w-100">
+               class="center ba b--moon-gray bg-lighter-gray card-shadow w-100">
         </div>
       </div>
   </section>
   <section class="bg-white bt b--moon-gray w-100 mt0 pb5-ns pb4 relative">
-    <div class="mw8 w-100 center pr4-l pl4-l pa2">
+    <div class="w-100 center pr4-l pl4-l pa2">
     <p class="f2-ns f3 mw7 center tc-ns mt5-ns mt4 lh-copy mb3">A suitable animation for every situation.</p>
     <p class="f4-ns f5 mw6 center mt4 lh-copy">We'll tailor the visual complexity and scope of the animation to your needs, creating engaging visuals appropriate for your audience.</p>
-    <div class="w-100 dt-l mt5">
-      <div class="w-50-l w-100 dtc-l v-mid lh-copy pr4-l pl4-l">
-        <p class="f4-ns f5 tc center lh-copy mb3 tr">From short cartoons, for an article or presentation<span class="f6">...</span></p>
-      </div>
-      <div class="w-50-l w-100 dtc-l pa4 ba b--moon-gray shadow-3 mw6 center mr4-l tc">
-        <img src="images/animation/moebius@1x.gif"
-             srcset="images/animation/moebius@1x.gif 1x, images/animation/moebius@2x.gif 2x"
-             alt="Animation of cylinder turning into moebius strip."
-             class="w-100">
-      </div>
-    </div>
-    <div class="w-100 dt-l mt5">
-      <div class="w-50-l w-100 dtc-l v-mid lh-copy pr4-l pl4-l">
-        <p class="f4-ns f5 tc center lh-copy mb3 tr"><span class="f6">...</span>to in-depth explanatory videos<span class="f6">...</span></p>
-      </div>
-      <div class="w-50-l w-100 dtc-l pa3 ba b--moon-gray shadow-3 mw6 center mr4-l" style="background-color: #f5f5f5">
-        <img src="images/animation/mire@1x.gif"
-             srcset="images/animation/mire@1x.gif 1x, images/animation/mire@2x.gif 2x"
-             alt="Animation of interferometry process."
-             class="w-100">
+    <div class="w-100 mt5">
+      <div class="dt-l mw8 center">
+        <div class="w-50-l w-100 dtc-l v-mid lh-copy">
+          <div class="w-100 pa5-l tc tl-l">
+            <h2 class="f5 mb0 mb3-l">Simple Cartoons</h2>
+            <p class="f5-ns f6 lh-copy mb3 mt3-l mt0">Complement your presentation or article with a short cartoon.</p>
+          </div>
+        </div>
+        <div class="w-50-l w-100 dtc-l pa4 ba b--moon-gray mw6 center mr4-l tc card-shadow">
+          <img src="images/animation/moebius@1x.gif"
+               srcset="images/animation/moebius@1x.gif 1x, images/animation/moebius@2x.gif 2x"
+               alt="Animation of cylinder turning into moebius strip."
+               class="w-100">
+        </div>
       </div>
     </div>
     <div class="w-100 dt-l mt5">
-      <div class="w-50-l w-100 dtc-l v-mid lh-copy pr4-l pl4-l">
-        <p class="f4-ns f5 tc center lh-copy mb3"><span class="f6">...</span>we'll bring your vision to life!</p>
+      <div class="dt-l mw8 center">
+        <div class="w-50-l w-100 v-mid lh-copy db dn-l">
+          <div class="w-100 pa5-l tc tl-l">
+            <h2 class="f5 mb0 mb3-l">Animated Figures</h2>
+            <p class="f5-ns f6 lh-copy mb3 mt3-l mt0">Bring an experimental procedure or complicated process to life.</p>
+          </div>
+        </div>
+        <div class="w-50-l w-100 dtc-l pa3 ba b--moon-gray mw6 center mr4-l relative card-shadow" style="background-color: #f5f5f5">
+          <img src="images/animation/mire@1x.gif"
+               srcset="images/animation/mire@1x.gif 1x, images/animation/mire@2x.gif 2x"
+               alt="Animation of interferometry process."
+               class="w-100">
+        </div>
+        <div class="w-50-l w-100 dtc-l v-mid lh-copy dn db-l">
+          <div class="w-100 pr5-l pl5-l pa5">
+            <h2 class="f5">Animated Figures</h2>
+            <p class="f5-ns f6 center lh-copy mb3">Bring an experimental procedure or complicated process to life.</p>
+          </div>
+        </div>
       </div>
-      <div class="w-50-l w-100 dtc-l ba b--moon-gray shadow-3 mw6 center mr4-l" style="background-color: #191d20">
-        <img src="images/animation/bring-to-life@1x.gif"
-             srcset="images/animation/bring-to-life@1x.gif 1x, images/animation/bring-to-life@2x.gif 2x"
-             alt="Animation of neutron detection apparatus."
-             class="w-100">
+    </div>
+    <div class="w-100 dt-l mt5">
+      <div class="dt-l mw8 center">
+        <div class="w-50-l w-100 dtc-l v-mid lh-copy">
+          <div class="w-100 pa5-l tc tl-l">
+            <h2 class="f5 mb0 mb3-l">In-Depth Explanatory Videos</h2>
+            <p class="f5-ns f6 lh-copy mb3 mt3-l mt0">Captivate your audience with a detailed explanatory animation.</p>
+          </div>
+        </div>
+        <div class="w-50-l w-100 dtc-l ba b--moon-gray mw6 center mr4-l card-shadow" style="background-color: #191d20">
+          <img src="images/animation/bring-to-life@1x.gif"
+               srcset="images/animation/bring-to-life@1x.gif 1x, images/animation/bring-to-life@2x.gif 2x"
+               alt="Animation of neutron detection apparatus."
+               class="w-100">
+        </div>
       </div>
     </div>
   </section>
-  <section class="bg-white bt b--white w-100 mt0 pb5-ns pb4 relative">
-    <div class="mw9 w-100 center pl5-l pr5-l pl2 pr2 relative z-1">
-      <p class="f2-ns f3 mw6 center tc mt0 lh-copy mt4">Recent work:</p>
-      <div class="w-100 mw7 center tc ba b--moon-gray shadow-3">
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/Wv-hoCenJx4" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-      </div>
-      <p class="f6 tc b mb1">Building a quantum computer with atomic ions</p>
-      <p class="f7 tc mt0">Client: Joint Quantum Institute</p>
+  <section class="w-100 bt b--white">
+    <div class="mw8 w-100 center mt4-ns mt3 relative z-max bg-white">
+      <p class="tc mb0 f2-ns f3 dark-gray mt4">Want to work together?</p>
+      <p class="f4-ns f5 mt4-ns center mb0 dn hidden measure pl4 pr4 lh-copy">Email <a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">sean@inform.studio</a> or tell us about your project using the form below.</p>
     </div>
-    <div class="absolute h-50 bg-lighter-gray w-100 center bottom-0 bt b--moon-gray"></div>
-  </section>
-  <section class="w-100 bg-lighter-gray bt b--lighter-gray pb6-ns pb5 b--white">
-    <div class="mw8 w-100 center">
-      <p class="tc mb0 f2-ns f3 dark-gray mt4">Have a project in mind?</p>
-      <p class="f5-ns f6 tc"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Let us know<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a> and we'll get to work.</p>
+    <div class="center w-100">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0Yf6vsFRACayiTypeS4h0INd2bZELVGxu11mq5nekecQVrQ/viewform?embedded=true" class="w-100 center tc relative z-1 db iframe-form" style="margin-top: -7rem;" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
   </section>
   <footer>
@@ -111,4 +141,12 @@
       <p class="tc f7 gray mt2 mb2">© 2018 Inform Studio</p>
     </div>
   </footer>
+  <script>
+    var x = document.getElementsByClassName("hidden");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      console.log(x[i])
+      x[i].style.display = "block";
+    }
+  </script>
 </body>

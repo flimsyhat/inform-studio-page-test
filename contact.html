@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>Contact</title>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="tachyons.min.css">
+  <script src="js/wufoo.js"></script>
+  <style>
+    .permissions {
+      margin-top: -0.3rem;
+    }
+    @media screen and (min-width: 30em) {
+      .bg-lightest-gray {
+        background-color: #fafafa;
+      }
+      .bg-lighter-gray {
+        background-color: #fcfcfc;
+      }
+      .b--lighter-gray {
+        border-color: #fcfcfc;
+      }
+    }
+    .card-shadow {
+      box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
+    }
+    @media screen and (max-width: 660px) {
+      .iframe-form {
+        margin-top: -2rem !important;
+        height: 900px;
+      }
+    }
+  </style>
+</head>
+<body class="sans-serif w-100 center black-70 f6 bg-white">
+  <header class="w-100">
+    <a href="index.html" class="no-underline black-70"><p class="tc f4-ns f5 mt0 mb0 mw8 center pa2"><b class="fw8">inform</b>studio</p></a>
+  </header>
+  <section class="bt b--moon-gray w-100 mt0 mb5-ns mb4 ">
+    <div class="mw8 w-100 center pl4 pr4">
+      <p class="tc-ns f2-ns f3 pt4-ns pt2 dark-gray">Questions or project inquiries?</p>
+      <div class="mw6 center">
+        <p class="f4-ns f5 mw6 center mt4-ns mt3 lh-copy mb4">We would love to hear from you! The best way to contact us is through email:</p>
+        <div class="mw6 w-100 pa4-ns pa3 center card-shadow dt ba b--gray">
+          <div class="w-40-ns w-40 dtc v-top tc">
+            <div class="pr4-ns pl0-m pa0 mt2 fr-ns">
+              <img src="images/headshots/sean.jpg" class="br-100 w4-ns w3 dib ba b--moon-gray pa1" alt="avatar">
+            </div>
+          </div>
+          <p class="f4-ns f5 mw6 center lh-copy dtc v-mid">Sean Kelley <br><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">sean@inform.studio</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-100 overflow-hidden">
+    <div class="w-100 center bg-white z-max relative pl4 pr4">
+      <p class="mw6 f4-ns f5 center mb0 dn hidden lh-copy">You can also tell us about your project using the form below:</p>
+    </div>
+    <div class="center w-100">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0Yf6vsFRACayiTypeS4h0INd2bZELVGxu11mq5nekecQVrQ/viewform?embedded=true" class="w-100 center tc relative z-1 db iframe-form" style="margin-top: -7rem;" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+  </section>
+  <footer>
+    <div class="bt b--moon-gray center mt0">
+      <p class="tc f7 gray mt2 mb2">© 2018 Inform Studio</p>
+    </div>
+  </footer>
+  <script>
+    var x = document.getElementsByClassName("hidden");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      console.log(x[i])
+      x[i].style.display = "block";
+    }
+  </script>
+</body>

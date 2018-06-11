@@ -21,6 +21,12 @@
   .card-shadow {
     box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
   }
+  @media screen and (max-width: 660px) {
+    .iframe-form {
+      margin-top: -2rem !important;
+      height: 900px;
+    }
+  }
   </style>
 </head>
 <body class="sans-serif w-100 center black-70 f6 bg-white">
@@ -118,24 +124,13 @@
     </div>
   </div>
   </section>
-  <section class="bg-white bt b--white w-100 mt0 pb5-ns pb4 relative">
-    <div class="mw9 w-100 center pl5-l pr5-l pl2 pr2 relative z-1">
-      <p class="f2-ns f3 mw6 center tc mt0 lh-copy mt4">Recent work:</p>
-      <div class="w-100 mw7 center tc ba b--moon-gray card-shadow pa2 bg-white relative">
-        <img src="images/technical-graphics/neutron-detector@1x.jpg"
-             srcset="images/technical-graphics/neutron-detector@1x.jpg 1x, images/technical-graphics/neutron-detector@2x.jpg 2x"
-             alt="Illustration of calibration stages for portable neutron flux monitor.">
-        <a href="http://inform.studio/images/technical-graphics/neutron-detector-large.jpg" target="_blank"><div class="bg-white absolute w2 bottom-0 br3 pa1 pr2 right-0 o-90 pointer"><img src="images/icons/expand.svg" class="o-70"></div></a>
-      </div>
-      <p class="f6 tc b mb1">Calibration stages for portable neutron flux monitor</p>
-      <p class="f7 tc mt0">Client: National Institute of Standards and Technology</p>
-    </div>
-    <div class="absolute h-50 bg-lighter-gray w-100 center bottom-0 bt b--moon-gray"></div>
-  </section>
-  <section class="w-100 bg-lighter-gray bt b--lighter-gray pb6-ns pb5 b--white">
-    <div class="mw8 w-100 center">
+  <section class="w-100 bt b--white">
+    <div class="mw8 w-100 center mt4-ns mt3 relative z-max bg-white">
       <p class="tc mb0 f2-ns f3 dark-gray mt4">Want something illustrated?</p>
-      <p class="f5-ns f6 tc"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a> and let's discuss.</p>
+      <p class="f4-ns f5 mt4-ns center mb0 dn hidden measure pl4 pr4 lh-copy">Email <a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">sean@inform.studio</a> or tell us about your project using the form below:</p>
+    </div>
+    <div class="center w-100">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0Yf6vsFRACayiTypeS4h0INd2bZELVGxu11mq5nekecQVrQ/viewform?embedded=true" class="w-100 center tc relative z-1 db iframe-form" style="margin-top: -7rem;" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
   </section>
   <footer>
@@ -143,4 +138,12 @@
       <p class="tc f7 gray mt2 mb2">© 2018 Inform Studio</p>
     </div>
   </footer>
+  <script>
+    var x = document.getElementsByClassName("hidden");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      console.log(x[i])
+      x[i].style.display = "block";
+    }
+  </script>
 </body>

@@ -21,6 +21,12 @@
         border-color: #fcfcfc;
       }
     }
+    @media screen and (max-width: 660px) {
+      .iframe-form {
+        margin-top: -2rem !important;
+        height: 900px;
+      }
+    }
   </style>
 </head>
 <body class="sans-serif w-100 center black-70 f6 bg-white">
@@ -34,9 +40,9 @@
       <p class="f4-ns f5 mw6 center mt5-ns mt4 lh-copy">The hard part is done—its time to share your work! A custom illustration is a great way to promote your research, and can be used for conference presentations, posters, lab websites, social media, and much more.</p>
     </div>
   </section>
-  <section class="w-100 pl2 pr2 bt b--moon-gray bg-lighter-gray pb5">
+  <section class="w-100 pl2 pr2 bt b--light-gray bg-lighter-gray pb5">
     <div class="mw8 w-100 center">
-      <p class="tc f3-ns f4 mt5-ns mt4">How it works:</p>
+      <p class="tc f2-ns f3 mt5-ns mt4">How it works:</p>
       <div class="dt-ns w-100 mt4">
         <div class="w-50-ns dtc-ns v-mid">
           <div class="pl4 pr4 tc">
@@ -107,10 +113,13 @@
       </div>
     </div>
   </section>
-  <section class="w-100 bt b--moon-gray pb6-ns pb5">
-    <div class="mw8 w-100 center">
-      <p class="tc mt6-ns mt5 mb0 f2-ns f3 dark-gray">Ready to get started?</p>
-      <p class="f5-ns f6 tc"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Contact us<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a> for a consultation.</p>
+  <section class="w-100 bt b--light-gray">
+    <div class="mw8 w-100 center mt6-ns mt5 relative z-max bg-white">
+      <p class="tc mb0 f2-ns f3 dark-gray mt4">Ready to get started?</p>
+      <p class="f4-ns f5 mt4-ns center mb0 dn hidden measure pl4 pr4 lh-copy">Email <a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">sean@inform.studio</a> or tell us about your project using the form below:</p>
+    </div>
+    <div class="center w-100">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0Yf6vsFRACayiTypeS4h0INd2bZELVGxu11mq5nekecQVrQ/viewform?embedded=true" class="w-100 center tc relative z-1 db iframe-form" style="margin-top: -7rem;" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
   </section>
   <footer>
@@ -118,4 +127,12 @@
       <p class="tc f7 gray mt2 mb2">© 2018 Inform Studio</p>
     </div>
   </footer>
+  <script>
+    var x = document.getElementsByClassName("hidden");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      console.log(x[i])
+      x[i].style.display = "block";
+    }
+  </script>
 </body>

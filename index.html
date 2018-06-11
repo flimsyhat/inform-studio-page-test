@@ -157,9 +157,6 @@
     .card-shadow {
       box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
     }
-    .card {
-      transition: box-shadow 135ms cubic-bezier(.4,0,.2,1),width 235ms cubic-bezier(.4,0,.2,1);
-    }
   </style>
 </head>
 <body class="sans-serif w-100 center black-70 f6 bg-white pl2-ns pr2-ns relative">
@@ -169,7 +166,7 @@
     <div class="w-100 mw6 tc center fr bt bb bn-ns b--dark-gray">
       <div class="w-100 dt mw6 pl5-ns pl6-m fr">
         <a class="f6 link dim ph2-ns ph1 pv3 mb2 black-80 v-mid w-20 tc dtc shrink br bn-ns b--dark-gray pl5-m" href="about.html"><p class="f3-ns f5 ma0">About</p></a>
-        <a class="f6 link dim ph2-ns ph1 pv2 mb2 v-mid w-20 dtc shrink br bn-ns b--dark-gray" href="mailto:sean@inform.studio"><img class="w3-ns w2 v-mid o-80" src="images/icons/mail-square.svg"></a>
+        <a class="f6 link dim ph2-ns ph1 pv2 mb2 v-mid w-20 dtc shrink br bn-ns b--dark-gray" href="contact.html"><img class="w3-ns w2 v-mid o-80" src="images/icons/mail-square.svg"></a>
         <a class="f6 link dim ph2-ns ph1 pv2-ns pv1 mb2 v-mid w-20 dtc shrink br bn-ns b--dark-gray" href="https://www.instagram.com/inform_science_studio/"><img class="w2-ns w1 v-mid o-80" src="images/icons/instagram_simple_icon.svg"></a>
         <a class="f6 link dim ph2-ns ph1 pv2-ns pv1 mb2 v-mid w-20 dtc shrink" href="https://twitter.com/inform_studio"><img class="w2-ns w1 v-mid o-80" src="images/icons/twitter.svg"></a>
       </div>
@@ -288,7 +285,7 @@
     </div>
     <section class="pt1 mt0-ns mt3 w-100 grid-l center pb5-ns pb3">
       <p class="tc mt5-ns mt2 mb0 f1-l f2-m f3 dark-gray">Interested in working together?</p>
-      <p class="f3-l f4-m f5 tc pb4"><a class="b no-underline dark-gray bb" href="mailto:sean@inform.studio">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
+      <p class="f3-l f4-m f5 tc pb4"><a class="b no-underline dark-gray bb" href="contact.html">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
     </section>
   </div>
   <div class="center b--moon-gray pb2 bt">
@@ -296,4 +293,12 @@
       <p class="tc f7 gray mt2 mb0">© 2018 Inform Studio</p>
     </div>
   </div>
+  <script>
+    var x = document.getElementsByClassName("hidden");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      console.log(x[i])
+      x[i].style.display = "block";
+    }
+  </script>
 </body>
