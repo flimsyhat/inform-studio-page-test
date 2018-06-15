@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://inform.studio/</loc>
+  <lastmod>2018-06-13T20:42:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://inform.studio/about.html</loc>
+  <lastmod>2018-06-13T20:42:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/contact.html</loc>
+  <lastmod>2018-06-13T20:42:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/journal-covers.html</loc>
+  <lastmod>2018-06-13T20:42:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/technical-graphics.html</loc>
+  <lastmod>2018-06-13T20:42:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/scientific-illustration.html</loc>
+  <lastmod>2018-06-13T20:42:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/explanatory-animation.html</loc>
+  <lastmod>2018-06-13T20:42:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/data-visualization.html</loc>
+  <lastmod>2018-06-13T20:42:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/interaction-development.html</loc>
+  <lastmod>2018-06-13T20:42:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://inform.studio/index.html</loc>
+  <lastmod>2018-06-13T20:42:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
