@@ -7,15 +7,15 @@
   <meta name="description" content="">
   <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
   <link rel="stylesheet" href="tachyons.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500" rel="stylesheet"> <style>
-    .ibm { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400}
-    .font-light { font-weight: 300 !important;}
-    footer {line-height: 1rem;}
-    .bg-light-gray {background-color: #fafafa}
-    .tag-line {
-      margin-top: -0.7rem;
-    }
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500" rel="stylesheet"> 
+  <style>
+  .ibm { font-family: 'IBM Plex Sans', sans-serif; font-weight: 400}
+  .font-light { font-weight: 300 !important;}
+  footer {line-height: 1rem;}
+  .bg-light-gray {background-color: #fafafa}
+  .tag-line {
+    margin-top: -0.7rem;
+  }
   .hero {
     margin-top: 10.3rem;
     margin-bottom: -10rem;
@@ -23,41 +23,34 @@
     font-weight: 600;
     padding: 0 2.8rem;
   }
+    @media screen and (min-width: 55.1em) {
+      .hit {
+    font-size: 1.75rem;
+    }
+  }
   @media screen and (min-width: 42em) and (max-width: 55.1em) {
     .hero {
       margin-top: 8.6rem;
       margin-bottom: -10rem;
       padding: 0 0rem;
     }
-        .micro {
-      padding: 0 0rem !important;
-      max-width: 22rem;
+    .micro {
+      margin-left: -0.5rem !important;
     }
   }
-  
   @media screen and (min-width: 36em) and (max-width: 42em) {
+    .side-text {
+      margin-top: 4rem;
+    }
+    .micro {
+      margin-left: 0.5rem !important;
+    }
     .hero {
       margin-top: 7rem;
       margin-bottom: -6rem;
       padding: 0 0rem;
     }
-        .micro {
-      padding: 0 0rem !important;
-    }
   }
-  
-  @media screen and (min-width: 36em) and (max-width: 42em) {
-    .side-text {
-      margin-top: 4rem;
-    }
-  }
-  
-  @media screen and (min-width: 55.1em) {
-      .hit {
-    font-size: 1.75rem;
-    }
-  }
-  
   @media screen and (max-width: 36em) {
     .hero {
       margin-top: 6rem;
@@ -65,17 +58,17 @@
       padding: 0 0rem;
     }
   }
-    .shrink{
-        -webkit-transform:scale(0.8);
-        -moz-transform:scale(0.8);
-        -ms-transform:scale(0.8);
-        transform:scale(0.8);
-      }
-    .cn {
-      display: flex;
-      justify-content: center;
-      align-items: center; 
+  .shrink{
+      -webkit-transform:scale(0.8);
+      -moz-transform:scale(0.8);
+      -ms-transform:scale(0.8);
+      transform:scale(0.8);
     }
+  .cn {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
   .logo {
     margin-top: .6rem;
     z-index: -1;
@@ -95,18 +88,32 @@
   }
   .micro {
     z-index: -1;
-    padding-right: 3rem;
+    margin-left: -3rem;
+  }
+  .micro-container {
+        padding-bottom:79%;
+        height:0;
+        position:relative;
+        overflow: hidden;
+        z-index: -1;
+      }
+  .nav {
+    max-width: 28rem;
   }
   </style>
 </head>
 <body class="ibm w-100 center black-80 f6 bg-light-gray relative pa4-ns pa2 pt2 pt4-l mw8">
-  <header class="">
+  <header class="ml3">
     <div class="tc tl-l fl-l w-100-m">
     <a href="index.html" class="no-underline">
-    <span class="dib mw4-ns mw3 mt1 mt0-ns o-60 logo"><img src="images/icons/eye-blue.svg" class="w-100 shrink"></span>
-      <p class="f2-ns f3 dib ma2 title ibm black-70 v-top pt2">Inform Studio</p></a></div>
-    <div class="w-100 mw6 tc center fr-l pr4-ns pr0-m">
-      <div class="w-100 dt mw6 pl5-l pl0 fr">
+      <span class="dib mw4-ns mw3 mt1 mt0-ns o-60 logo">
+        <img src="images/icons/eye-blue.svg" class="w-100 shrink">
+      </span>
+      <p class="f2-ns f3 dib ma2 title ibm black-70 v-top pt2">Inform Studio</p>
+    </a>
+    </div>
+    <div class="w-100 nav tc center fr-l pr0-ns pr0-m">
+      <div class="w-100 dt fr">
         <a class="f6 link dim ph2-ns ph1 pv3 mb2 black-70 v-mid w-20 tc dtc shrink ibm" href="about.html"><p class="f3 ma0">About</p></a>
         <a class="f6 link dim ph2-ns ph1 pv2 mb2 v-mid w-20 dtc shrink" href="contact.html"><img class="w3 v-mid o-80" src="images/icons/mail-square.svg"></a>
         <a class="f6 link dim ph2-ns ph1 pv2-ns pv1 mb2 v-mid w-20 dtc shrink" href="https://www.instagram.com/inform.science.studio/"><img class="w2 w1 v-mid o-80" src="images/icons/instagram_simple_icon.svg"></a>
@@ -126,36 +133,21 @@
               From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.
             </p>
           </article>
-          <img src="microscope-composite@1x-flipped.png" class="w-50-ns mw8-ns w-100 micro dn db-ns">
-<!--
-          <img src="microscope-composite@1x.png" class="w-50">
-          <article class="pa3 pt ph5-ns w-50 fr dib v-mid">
-            <p class="measure f4 f3-ns lh-copy">
-              Sometimes words fall short.
-            </p>
-            <p class="measure f5 f4-ns lh-copy">
-              From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.
-            </p>
-          </article>
--->
+          <div class="micro-container w-50-ns mw8-ns w-100 dn db-ns">
+            <img src="images/microscope@1x.png"
+                   srcset="images/microscope@1x.png 1x, images/microscope@2x.png 2x"
+                   alt="Microscope."
+                   class="micro w-100">
+          </div>
       </div>
     </div>
   <div class="w-100 pr5-l pl5-l mw8">
     <h3 class="f6 ttu tracked mt0">Recent Work</h3>
-  <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/bc1ccc672f7c58ed8a04432cc0fee75f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+  <!-- LightWidget WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe src="//lightwidget.com/widgets/bc1ccc672f7c58ed8a04432cc0fee75f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
     <h3 class="mt0 tr"><a href="https://www.instagram.com/inform.science.studio/" class="blue-text no-underline f6 ttu tracked">See more →</a></h3>
   </div>
-<!--
-  <article class="pa3 ph5-ns">
-    <h3 class="f6 ttu tracked mt0">Vertical Align</h3>
-    <p class="measure f4 f3-ns lh-copy">
-      Even with an eloquent vocabulary, it can be difficult to describe how something looks—especially when dealing with a complex process or unfamiliar phenomenon.
-    </p>
-    <p class="measure f5 f4-ns lh-copy">
-      Illustration and animation fill conceptual gaps, supporting a description by providing hard-to-visualize details.
-    </p>
-  </article>
--->
   <section class="w-100 pb4">
     <div class="mw8 w-100 center">
       <div class="w-100 mw8 pr5-l pl5-l center pt4">
@@ -164,25 +156,12 @@
       </div>
     </div>
   </section>
-<!--
-  <article class="pa3 ph5-ns">
-    <h3 class="f6 ttu tracked mt0">Vertical Align</h3>
-    <p class="measure f4 f3-ns lh-copy">
-      Use vertical align to set typography just right. Vertical align
-      works on inline-level elements (display inline and inline-block) and on table cells.
-    </p>
-    <p class="measure f5 f4-ns lh-copy">
-      This documents how vertical align affects text elements. If you’d
-      like to see how to vertically align elements - checkout the layout documentation.
-    </p>
-  </article>
--->
   <section class="pt1 mt0-ns mt3 w-100 grid-l center pb1">
       <p class="tc-ns mt5-ns mt2 mb0 f1-l f2-m f3 ibm font-light">Want to work together?</p>
       <p class="f3-l f4 tc-ns pb4 mt"><a class="no-underline dark-gray bb" href="contact.html">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
     </section>
-  <footer class="pr5-ns pl5-ns pb4">
-      <div class="dtc mw5 fr tr mt3">
+  <footer class="pr5-ns pl5-ns pb4-ns pb3">
+      <div class="dtc mw5 fr tr mt3-ns">
           <div class="f7">
             <p class="ma0">Inform Studio © 2018-19</p>
           </div>
