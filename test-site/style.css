@@ -1,0 +1,58 @@
+body {
+  font-family: 'IBM Plex Sans', sans-serif; font-weight: 400
+}
+.font-light { font-weight: 300 !important;}
+.tag-line {
+  margin-top: -0.7rem;
+}
+.shrink{
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -ms-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+.cn {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.logo {
+  margin-top: .6rem;
+  z-index: -1;
+  margin-left: -1.6rem;
+  width: 5rem;
+}
+.blue-text {
+  color: #2485D6;
+}
+.blue-color {
+  color: #008AFF;
+}
+.b-blue-dashed {
+  border-style: dashed;
+  border-color: rgba(0, 162, 255, 0.5);
+  border-width: 1px;
+}
+.card-shadow {
+  box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
+}
+.iframe-form {
+  margin-top: 3rem !important;
+}
+@media screen and (max-width: 36em) {
+  .nav {
+    margin-top: -0.6rem;
+    margin-bottom: -1rem;
+  }
+  .contact {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 55.1em) {
+  .nav {
+  max-width: 28rem;
+  }
+}
+.bg-light-gray {
+  background-color: rgba(250, 250, 250, 1)
+}

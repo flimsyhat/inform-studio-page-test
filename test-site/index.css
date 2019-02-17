@@ -1,0 +1,68 @@
+/* INDEX */
+
+.hero {
+  margin-top: 10.3rem;
+  margin-bottom: -10rem;
+  font-size: 3.15rem;
+  font-weight: 600;
+  padding: 0 2.8rem;
+}
+
+.micro {
+  z-index: -1;
+  margin-left: -3rem;
+}
+.micro-container {
+  padding-bottom:79%;
+  height:0;
+  position:relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+@media screen and (min-width: 55.1em) {
+  .hit {
+  font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 42em) and (max-width: 55.1em) {
+  .hero {
+    margin-top: 8.6rem;
+    margin-bottom: -10rem;
+    padding: 0 0rem;
+  }
+}
+  
+@media screen and (min-width: 42em) and (max-width: 55.1em) {
+  .hero {
+    margin-top: 8.6rem;
+    margin-bottom: -10rem;
+    padding: 0 0rem;
+  }
+  .micro {
+    margin-left: -0.5rem !important;
+  }
+}
+
+@media screen and (min-width: 36em) and (max-width: 42em) {
+  .side-text {
+    margin-top: 4rem;
+  }
+  .micro {
+    margin-left: 0.5rem !important;
+  }
+  .hero {
+    margin-top: 7rem;
+    margin-bottom: -6rem;
+    padding: 0 0rem;
+  }
+}
+
+@media screen and (max-width: 36em) {
+  .hero {
+    margin-top: 6rem;
+    margin-bottom: -6rem;
+    padding: 0 0rem;
+  }
+}
