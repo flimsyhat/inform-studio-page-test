@@ -23,10 +23,13 @@
     font-weight: 600;
     padding: 0 2.8rem;
   }
-    @media screen and (min-width: 55.1em) {
+  @media screen and (min-width: 55.1em) {
       .hit {
     font-size: 1.75rem;
     }
+    .nav {
+    max-width: 28rem;
+  }
   }
   @media screen and (min-width: 42em) and (max-width: 55.1em) {
     .hero {
@@ -56,6 +59,13 @@
       margin-top: 6rem;
       margin-bottom: -6rem;
       padding: 0 0rem;
+    }
+    .nav {
+      margin-top: -0.6rem;
+      margin-bottom: -1rem;
+    }
+    .contact {
+      font-size: 1.8rem;
     }
   }
   .shrink{
@@ -97,13 +107,10 @@
         overflow: hidden;
         z-index: -1;
       }
-  .nav {
-    max-width: 28rem;
-  }
   </style>
 </head>
 <body class="ibm w-100 center black-80 f6 bg-light-gray relative pa4-ns pa2 pt2 pt4-l mw8">
-  <header class="ml3">
+  <header class="ml3-l">
     <div class="tc tl-l fl-l w-100-m">
     <a href="index.html" class="no-underline">
       <span class="dib mw4-ns mw3 mt1 mt0-ns o-60 logo">
@@ -112,7 +119,7 @@
       <p class="f2-ns f3 dib ma2 title ibm black-70 v-top pt2">Inform Studio</p>
     </a>
     </div>
-    <div class="w-100 nav tc center fr-l pr0-ns pr0-m">
+    <div class="w-100 nav tc center fr-l pr0-ns pr0-m mw6">
       <div class="w-100 dt fr">
         <a class="f6 link dim ph2-ns ph1 pv3 mb2 black-70 v-mid w-20 tc dtc shrink ibm" href="about.html"><p class="f3 ma0">About</p></a>
         <a class="f6 link dim ph2-ns ph1 pv2 mb2 v-mid w-20 dtc shrink" href="contact.html"><img class="w3 v-mid o-80" src="images/icons/mail-square.svg"></a>
@@ -123,7 +130,7 @@
   </header>
     <div class="pt1">
       <p class="f2 center font-light ibm dn-ns mb0 pb2 mt5 pt4">Scientific Illustration and Animation</p>
-        <div class="w-100 mw8 hero o-90 dn db-ns"><img src="title.svg" class=""></div>
+        <div class="w-100 mw8 hero o-90 dn db-ns"><img src="images/title.svg" class=""></div>
         <div class="cn w-100 pb4 pb0-ns">
           <article class="pa3-l pl5-l w-50-ns w-100 fr-ns dib-ns v-mid side-text">
             <p class="measure f4 f3-ns lh-copy hit">
@@ -157,8 +164,8 @@
     </div>
   </section>
   <section class="pt1 mt0-ns mt3 w-100 grid-l center pb1">
-      <p class="tc-ns mt5-ns mt2 mb0 f1-l f2-m f3 ibm font-light">Want to work together?</p>
-      <p class="f3-l f4 tc-ns pb4 mt"><a class="no-underline dark-gray bb" href="contact.html">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
+      <p class="tc-ns mt5-ns mt2 mb0 f1-l f2-m f3 ibm font-light contact">Want to work together?</p>
+      <p class="f3-l f4 tc-ns pb4"><a class="no-underline dark-gray bb" href="contact.html">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
     </section>
   <footer class="pr5-ns pl5-ns pb4-ns pb3">
       <div class="dtc mw5 fr tr mt3-ns">
