@@ -1,278 +1,142 @@
 <!DOCTYPE HTML>
 <html lang = "en">
 <head>
-  <title>Inform Studio – Science Illustration and Animation</title>
+  <title>Inform Studio – Scientific Illustration and Animation</title>
   <meta charset = "UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="From journal covers and scientific illustration to technical graphics and explanatory animation, we translate scientific research into clear visual form.">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="tachyons.min.css">
+  <meta name="description" content="">
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+  <link rel="stylesheet" href="tachyons.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500" rel="stylesheet">
   <style>
-    .b--lighter-gray {
-      border-color: #fcfcfc !important;
+  .hero {
+    margin-top: 10.3rem;
+    margin-bottom: -10rem;
+    font-size: 3.15rem;
+    font-weight: 600;
+    padding: 0 2.8rem;
+  }
+  .micro {
+    z-index: -1;
+    margin-left: -3rem;
+  }
+  .micro-container {
+    padding-bottom:79%;
+    height:0;
+    position:relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  @media screen and (min-width: 55.1em) {
+    .hit {
+    font-size: 1.75rem;
     }
-    .bg-lightest-gray {
-        background-color: #fafafa;
+  }
+  @media screen and (min-width: 42em) and (max-width: 55.1em) {
+    .hero {
+      margin-top: 8.6rem;
+      margin-bottom: -10rem;
+      padding: 0 0rem;
     }
-    .bg-lighter-gray {
-        background-color: #fcfcfc;
+  }
+  @media screen and (min-width: 42em) and (max-width: 55.1em) {
+    .hero {
+      margin-top: 8.6rem;
+      margin-bottom: -10rem;
+      padding: 0 0rem;
     }
-    .copyright {
-      margin-bottom: 1.25rem !important;
+    .micro {
+      margin-left: -0.5rem !important;
     }
-    .gradient {
-      background-image: linear-gradient(180deg, #fafafa 0%, #cccccc 100%);
+  }
+  @media screen and (min-width: 36em) and (max-width: 42em) {
+    .side-text {
+      margin-top: 4rem;
+    }
+    .micro {
+      margin-left: 0.5rem !important;
     }
     .hero {
-      position: absolute;
-      left: -80px;
-      width: 600px;
-      top: -100%;
-      height: 250%;
-      transform: rotate(25deg);
-      backface-visibility: hidden;
+      margin-top: 7rem;
+      margin-bottom: -6rem;
+      padding: 0 0rem;
     }
-    .cover-left {
-      background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 100%);
+  }
+  @media screen and (max-width: 36em) {
+    .hero {
+      margin-top: 6rem;
+      margin-bottom: -6rem;
+      padding: 0 0rem;
     }
-    .cover-right {
-      background: linear-gradient(to left, white, rgba(255, 255, 255, 0) 100%);
+    .contact-line {
+      line-height: 1.65rem;
     }
-    .shadow {
-       -moz-box-shadow:    inset 0 0 40px 20px #ffffff;
-       -webkit-box-shadow: inset 0 0 40px 20px #ffffff;
-       box-shadow:         inset 0 0 40px 20px #ffffff;
-    }
-    .card-shadow {
-      box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
-    }
-    @media screen and (min-width: 60em) {
-      .inform {
-        font-size: 48px !important;
-      }
-      .fadein {
-        opacity: 1.0;
-      }
-      .grid-l {
-        max-width: 76rem;
-      }
-      .testimonials-l {
-        max-width: 86rem;
-      }
-      .hero {
-        left: -4.5% !important;
-        width: 660px !important;
-      }
-      .fadein img {
-          position:absolute;
-          top:0;
-          -webkit-animation-name: fade;
-          -webkit-animation-iteration-count: infinite;
-          -webkit-animation-duration: 24s;
-          animation-name: fade;
-          animation-iteration-count: infinite;
-          animation-duration: 24s;
-      }
-
-      @-webkit-keyframes fade {
-          0% {opacity: 0;}
-          20% {opacity: 1;}
-          33% {opacity: 1;}
-          53% {opacity: 0;}
-          100% {opacity: 0;}
-      }
-      @keyframes fade {
-          0% {opacity: 0;}
-          20% {opacity: 1;}
-          33% {opacity: 1;}
-          53% {opacity: 0;}
-          100% {opacity: 0;}
-      }
-
-      #f1 {
-      }
-      #f2 {
-          -webkit-animation-delay: -16s;
-      }
-      #f3 {
-          -webkit-animation-delay: -8s;
-      }
-    }
-    @media screen and (min-width: 30em) and (max-width: 60em) {
-      .f-inform-m {
-        font-size: 4rem;
-      }
-    }
-    @media screen and (min-width: 30em) and (max-width: 39em) {
-      .hero {
-        left: -160px;
-      }
-    }
-    @media screen and (min-width: 30em) {
-      html {
-        font-size: 13px;
-      }
-      .inform {
-        font-size: 3rem;
-      }
-      .mw-image {
-        max-width: 32rem;
-      }
-      .image-container {
-        padding-bottom:100%;
-        height:0;
-        position:relative;
-        overflow: hidden;
-        transform: scale(1.001); /* fixes border width issue */
-      }
-      .thumb-image {
-        width:100%;
-        height:100%;
-        display:block;
-        position:absolute;
-      }
-      .shrink{
-        -webkit-transform:scale(0.9);
-        -moz-transform:scale(0.9);
-        -ms-transform:scale(0.9);
-        transform:scale(0.9);
-      }
-    }
+  }
   </style>
 </head>
-<body class="sans-serif w-100 center black-70 f6 bg-white pl2-ns pr2-ns relative">
-  <header class="center w-100 mt4-l mt3-m mt2 pb0 overflow-auto">
-    <div class="grid-l center">
-    <div class="fl-ns center mw5-ns pa4-l pt0-l pr5-m absolute-ns mw4"><img src="images/logos/logo-mobile.svg" class="w-100 shrink"></div>
-    <div class="w-100 mw6 tc center fr bt bb bn-ns b--dark-gray">
-      <div class="w-100 dt mw6 pl5-ns pl6-m fr">
-        <a class="f6 link dim ph2-ns ph1 pv3 mb2 black-80 v-mid w-20 tc dtc shrink br bn-ns b--dark-gray pl5-m" href="about.html"><p class="f3-ns f5 ma0">About</p></a>
-        <a class="f6 link dim ph2-ns ph1 pv2 mb2 v-mid w-20 dtc shrink br bn-ns b--dark-gray" href="contact.html"><img class="w3-ns w2 v-mid o-80" src="images/icons/mail-square.svg"></a>
-        <a class="f6 link dim ph2-ns ph1 pv2-ns pv1 mb2 v-mid w-20 dtc shrink br bn-ns b--dark-gray" href="https://www.instagram.com/inform.science.studio/"><img class="w2-ns w1 v-mid o-80" src="images/icons/instagram_simple_icon.svg"></a>
-        <a class="f6 link dim ph2-ns ph1 pv2-ns pv1 mb2 v-mid w-20 dtc shrink" href="https://twitter.com/inform_studio"><img class="w2-ns w1 v-mid o-80" src="images/icons/twitter.svg"></a>
-      </div>
+<body class="ibm w-100 center black-80 f6 bg-light-gray relative pa4-ns pa2 pt2 pt4-l mw8">
+  <header class="ml2-l">
+    <div class="tc tl-l fl-l w-100-m">
+    <a href="index.html" class="no-underline">
+      <span class="dib o-90 new-logo">
+        <img src="images/logo.svg" class="w-100 shrink">
+      </span>
+    </a>
     </div>
+    <div class="w-100 nav tc center fr-l pr0-ns pr0-m mw6">
+      <div class="w-100 dt fr">
+        <a class="f6 link dim ph2-ns ph1 pv3 mb2 black-80 v-mid w-20 tc dtc shrink ibm" href="about.html"><p class="f3 ma0">About</p></a>
+        <a class="f6 link dim ph2-ns ph1 pv2 mb2 v-mid w-20 dtc shrink" href="contact.html"><img class="w3 v-mid o-80" src="images/icons/mail-square-blue.svg"></a>
+        <a class="f6 link dim ph2-ns ph1 pv2-ns pv1 mb2 v-mid w-20 dtc shrink" href="https://www.instagram.com/inform.science.studio/"><img class="w2 w1 v-mid o-80" src="images/icons/instagram_simple_icon-blue.svg"></a>
+        <a class="f6 link dim ph2-ns ph1 pv2-ns pv1 mb2 v-mid w-20 dtc shrink" href="https://twitter.com/inform_studio"><img class="w2 v-mid o-80" src="images/icons/twitter-blue.svg"></a>
+      </div>
     </div>
   </header>
-  <div class="center pl4-l pr4-l">
-    <section class="w-100 mt0 pb4-ns pb2 pl4-l grid-l center bg-white bt-ns bb-ns b--moon-gray overflow-hidden relative mb3-ns mb0 br2" style="z-index: 100;">
-      <div class="w-50-l tr tl-l w-100 right-0 h-100 bg-gray absolute dn db-ns">
-        <!-- fadein -->
-        <img src="images/index/hero-image-1.jpg" id="f1">
-        <!-- <img src="images/index/hero-image-2.jpg" id="f2">
-        <img src="images/index/hero-image-3.jpg" id="f3"> -->
+    <div class="pt1">
+      <p class="f2 center font-light ibm dn-ns mb0 pb2 mt5 pt4">Scientific Illustration and Animation</p>
+        <div class="w-100 mw8 hero o-90 dn db-ns"><img src="images/title.svg" class=""></div>
+        <div class="cn w-100 pb4 pb0-ns">
+          <article class="pa3-l pl5-l w-50-ns w-100 fr-ns dib-ns v-mid side-text">
+            <p class="measure f4 f3-ns lh-copy hit">
+              Sometimes words fall short.
+            </p>
+            <p class="measure f5 f4-ns lh-copy">
+              From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.
+            </p>
+          </article>
+          <div class="micro-container w-50-ns mw8-ns w-100 dn db-ns">
+            <img src="images/microscope@1x.png"
+                   srcset="images/microscope@1x.png 1x, images/microscope@2x.png 2x"
+                   alt="Microscope."
+                   class="micro w-100">
+          </div>
       </div>
-      <div class="hero bg-white shadow-3 ba b--moon-gray dn db-ns"></div>
-      <div class="w-100 pb4-ns pb2 pl4-ns pl3 pl2-l pr4-ns pr3 relative">
-        <div class="mw7-ns mw6 w-100 relative pr4-l pr6-m">
-          <p class="f1-l f2-m f3 pt4-ns pt2 mb3 dark-gray relative"><b class="inform">Inform</b> is a science illustration <br class="db-l dn">and animation studio.</p>
-          <p class="f3-l f4-m f5 mw7 pr6-ns mr3 mt5-ns mt4 lh-copy">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
+    </div>
+  <div class="w-100 pr5-l pl5-l mw8">
+    <h3 class="f6 ttu tracked mt0">Recent Work</h3>
+  <!-- LightWidget WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe src="//lightwidget.com/widgets/bc1ccc672f7c58ed8a04432cc0fee75f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <h3 class="mt0 tr"><a href="https://www.instagram.com/inform.science.studio/" class="blue-text no-underline f6 ttu tracked">See more →</a></h3>
+  </div>
+  <section class="w-100 pb4">
+    <div class="mw8 w-100 center">
+      <div class="w-100 mw8 pr5-l pl5-l center pt4">
+        <h3 class="f6 ttu tracked mt0">Demo Reel</h3>
+        <div style="padding:56.25% 0 0 0;position:relative;" class=""><iframe src="https://player.vimeo.com/video/271547528?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+  </section>
+  <section class="pt1 mt0-ns mt3 w-100 grid-l center pb1">
+      <p class="tc-ns mt5-ns mt2 mb0 f1-l f2-m f3 ibm font-light contact">Want to work together?</p>
+      <p class="f3-l f4 tc-ns pb4 contact-line"><a class="no-underline dark-gray bb" href="contact.html">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
+    </section>
+  <footer class="pr5-l pl5-ns pb4-ns pb3">
+      <div class="dtc mw5 fr tr mt3-ns">
+          <div class="f7">
+            <p class="ma0">Inform Studio © 2018-19</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <div class="cf center mw9-l mw8 pl0-ns pr0-ns pl2 pr2 pb4-l pb3 relative shadow bg-lighter-gray">
-      <div class="absolute w-20 h-100 left-0 cover-left z-99"></div>
-      <div class="absolute w-20 h-100 right-0 cover-right z-99"></div>
-      <div class="grid-l w-100 center pt4-l pt3-m pt0">
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
-        <a href="journal-covers.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container dt db-ns w-100 br4-ns card-shadow">
-            <picture>
-              <source media="(max-width: 480px)"
-                      srcset="images/index/nphotonics-mobile@1x.jpg 1x, images/index/nphotonics-mobile@2x.jpg 2x">
-              <img src="images/index/nphotonics@1x.jpg"
-                   srcset="images/index/nphotonics@1x.jpg 1x, images/index/nphotonics@2x.jpg 2x"
-                   alt="Nature Photonics cover illustration."
-                   class="thumb-image dtc db-ns w-100">
-            </picture>
-            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-ns b--moon-gray dtc db-ns v-mid w-70"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Journal Covers</p></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
-        <a href="technical-graphics.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
-            <picture>
-              <source media="(max-width: 480px)"
-                      srcset="images/index/prospect_diagram-mobile@1x.jpg 1x, images/index/prospect_diagram-mobile@2x.jpg 2x">
-              <img src="images/index/prospect_diagram@1x.jpg"
-                   srcset="images/index/prospect_diagram@1x.jpg 1x, images/index/prospect_diagram@2x.jpg 2x"
-                   alt="Diagram of PROSPECT experiment."
-                   class="thumb-image dtc db-ns w-100">
-            </picture>
-            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Technical Graphics</p></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
-        <a href="scientific-illustration.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
-            <picture>
-              <source media="(max-width: 480px)"
-                      srcset="images/index/parafermions-mobile@1x.jpg 1x, images/index/parafermions-mobile@2x.jpg 2x">
-              <img src="images/index/parafermions@1x.jpg"
-                   srcset="images/index/parafermions@1x.jpg 1x, images/index/parafermions@2x.jpg 2x"
-                   alt="Illustration of parafermions."
-                   class="thumb-image dtc db-ns w-100">
-            </picture>
-            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Scientific Illustration</p></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
-        <a href="explanatory-animation.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
-            <picture>
-              <source media="(max-width: 480px)"
-                      srcset="images/index/moebius-mobile@1x.jpg 1x, images/index/moebius-mobile@2x.jpg 2x">
-              <img src="images/index/moebius.gif"
-                   alt="Animation of cylinder turning into a moebius strip."
-                   class="thumb-image dtc db-ns w-100">
-            </picture>
-            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Explanatory Animation</p></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
-        <a href="data-visualization.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
-            <picture>
-              <source media="(max-width: 480px)"
-                      srcset="images/index/dots-mobile@1x.jpg 1x, images/index/dots-mobile@2x.jpg 2x">
-              <img src="images/index/dots@1x.jpg"
-                   srcset="images/index/dots@1x.jpg 1x, images/index/dots@2x.jpg 2x"
-                   alt="Visualization of quantum dots."
-                   class="thumb-image dtc db-ns w-100">
-            </picture>
-            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Data Visualization</p></div>
-          </div>
-        </a>
-      </div>
-      <div class="w-third-l w-50-ns w-100 mw-image center fl-ns pa3-ns mb3 mb0-ns">
-        <a href="interaction-development.html" class="dark-gray no-underline">
-          <div class="relative ba b--gray grow pointer image-container  dt db-ns w-100 br4-ns card-shadow">
-            <picture>
-              <source media="(max-width: 480px)"
-                      srcset="images/index/interaction-mobile@1x.jpg 1x, images/index/interaction-mobile@2x.jpg 2x">
-              <img src="images/index/interaction@1x.gif"
-                   srcset="images/index/interaction@1x.gif 1x, images/index/interaction@2x.gif 2x"
-                   alt="Short animation of bloch sphere interactive."
-                   class="thumb-image dtc db-ns w-100">
-            </picture>
-            <div class="bg-white absolute-ns w-100-ns bottom-0-ns bt-m bt-l b--moon-gray dtc db-ns v-mid w-70 bl bn-ns"><p class="tc-ns pa3 ma0 f4-ns f5 b-ns">Interaction Development</p></div>
-          </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <section class="pt1 mt0-ns mt3 w-100 grid-l center pb5-ns pb3">
-      <p class="tc mt5-ns mt2 mb0 f1-l f2-m f3 dark-gray">Interested in working together?</p>
-      <p class="f3-l f4-m f5 tc pb4"><a class="b no-underline dark-gray bb" href="contact.html">Get in touch<span><img src="images/icons/mail.svg" class="w2 ml1"></span></a>  and we'll make it happen.</p>
-    </section>
-  </div>
-  <div class="center b--moon-gray pb2 bt">
-    <div class="center mw6-l">
-      <p class="tc f7 gray mt2 mb0">© 2018-19 Inform Studio</p>
-    </div>
-  </div>
+  </footer>
 </body>
