@@ -1,0 +1,13 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<svg width="100%" height="100%" viewBox="0 0 1000 1580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
+    <g transform="matrix(-0.172528,-0.444769,0.444769,-0.172528,-115.969,1023.79)">
+        <path d="M493.872,1036.47L501.461,1022.26L513.913,1030.95" style="fill:none;stroke:black;stroke-width:6.29px;" class="TgOLJyqN_0"></path>
+    </g>
+    <g transform="matrix(-0.240568,-0.411962,0.411962,-0.240568,-23.3639,1216.9)">
+        <path d="M493.872,1036.47L501.461,1022.26L513.913,1030.95" style="fill:none;stroke:black;stroke-width:6.29px;" class="TgOLJyqN_1"></path>
+    </g>
+    <g transform="matrix(0.125368,0.468444,-0.502095,0.134374,815.642,393.772)">
+        <path d="M493.872,1036.47L501.461,1022.26L513.913,1030.95" style="fill:none;stroke:black;stroke-width:5.97px;" class="TgOLJyqN_2"></path>
+    </g>
+<style data-made-with="vivus-instant">.TgOLJyqN_0{stroke-dasharray:32 34;stroke-dashoffset:33;animation:TgOLJyqN_draw_0 5000ms ease 0ms infinite,TgOLJyqN_fade 5000ms linear 0ms infinite;}.TgOLJyqN_1{stroke-dasharray:32 34;stroke-dashoffset:33;animation:TgOLJyqN_draw_1 5000ms ease 0ms infinite,TgOLJyqN_fade 5000ms linear 0ms infinite;}.TgOLJyqN_2{stroke-dasharray:32 34;stroke-dashoffset:33;animation:TgOLJyqN_draw_2 5000ms ease 0ms infinite,TgOLJyqN_fade 5000ms linear 0ms infinite;}@keyframes TgOLJyqN_draw{100%{stroke-dashoffset:0;}}@keyframes TgOLJyqN_fade{0%{stroke-opacity:1;}92%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes TgOLJyqN_draw_0{36%{stroke-dashoffset: 33}40%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes TgOLJyqN_draw_1{56.00000000000001%{stroke-dashoffset: 33}60%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes TgOLJyqN_draw_2{76%{stroke-dashoffset: 33}80%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

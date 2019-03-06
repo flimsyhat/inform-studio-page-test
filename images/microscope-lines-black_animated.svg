@@ -1,0 +1,13 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<svg width="100%" height="100%" viewBox="0 0 1000 1580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
+    <g transform="matrix(2.07818,-0.645299,0.727027,2.34139,-672.982,-636.582)">
+        <path d="M231.566,602.703C223.157,601.311 216.619,591.008 216.619,578.522C216.619,565.088 224.188,554.181 233.511,554.181C242.834,554.181 250.403,565.088 250.403,578.522C250.403,590.959 243.916,601.23 235.555,602.686" style="fill:none;stroke:black;stroke-width:1.29px;" class="AmzNiNCE_0"></path>
+    </g>
+    <g transform="matrix(1.52411,-0.473252,0.53319,1.71714,-403.626,-159.357)">
+        <path d="M230.276,602.416C222.498,600.239 216.619,590.362 216.619,578.522C216.619,565.088 224.188,554.181 233.511,554.181C242.834,554.181 250.403,565.088 250.403,578.522C250.403,590.43 244.455,600.353 236.611,602.453" style="fill:none;stroke:black;stroke-width:1.76px;" class="AmzNiNCE_1"></path>
+    </g>
+    <g transform="matrix(1.26611,-0.454382,0.640206,1.7839,-539.818,-318.535)">
+        <path d="M534.506,700.316C547.617,701.055 555.358,701.965 555.358,702.948C555.358,705.416 506.657,707.419 446.67,707.419C386.684,707.419 337.983,705.416 337.983,702.948C337.983,701.972 345.607,701.069 358.537,700.333" style="fill:none;stroke:black;stroke-width:1.83px;" class="AmzNiNCE_2"></path>
+    </g>
+<style data-made-with="vivus-instant">.AmzNiNCE_0{stroke-dasharray:127 129;stroke-dashoffset:128;animation:AmzNiNCE_draw_0 5000ms ease 0ms infinite,AmzNiNCE_fade 5000ms linear 0ms infinite;}.AmzNiNCE_1{stroke-dasharray:125 127;stroke-dashoffset:126;animation:AmzNiNCE_draw_1 5000ms ease 0ms infinite,AmzNiNCE_fade 5000ms linear 0ms infinite;}.AmzNiNCE_2{stroke-dasharray:261 263;stroke-dashoffset:262;animation:AmzNiNCE_draw_2 5000ms ease 0ms infinite,AmzNiNCE_fade 5000ms linear 0ms infinite;}@keyframes AmzNiNCE_draw{100%{stroke-dashoffset:0;}}@keyframes AmzNiNCE_fade{0%{stroke-opacity:1;}92%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes AmzNiNCE_draw_0{20%{stroke-dashoffset: 128}40%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes AmzNiNCE_draw_1{40%{stroke-dashoffset: 126}60%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes AmzNiNCE_draw_2{60%{stroke-dashoffset: 262}80%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
