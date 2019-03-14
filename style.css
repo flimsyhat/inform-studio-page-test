@@ -1,7 +1,8 @@
-body {
-  font-family: 'IBM Plex Sans', sans-serif; font-weight: 400
+.ibm {
+  font-family: 'IBM Plex Sans', sans-serif; font-weight: 400;
 }
 .font-light { font-weight: 300 !important;}
+.font-heavy { font-weight: 700 !important;}
 .tag-line {
   margin-top: -0.7rem;
 }
