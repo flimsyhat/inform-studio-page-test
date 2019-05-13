@@ -56,7 +56,7 @@
 }
 @media screen and (max-width: 36em) {
   .hit {
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-weight: 300 !important;
   }
 }
@@ -144,6 +144,8 @@
   }
   .about-text {
     font-size: 1.1rem;
+    font-weight: 400 !important;
+    color: rgba(0,0,0.8)
   }
   .about-small {
     font-size: 1rem;
@@ -208,7 +210,7 @@ section > div {
   .title {
     text-align: center;
     margin-bottom: 0rem;
-    margin-top: 1rem;
+    margin-top: .6rem;
   }
 }
 @media screen and (min-width: 52.1em) {
@@ -246,7 +248,7 @@ section > div {
 .roboto {
   font-family: 'Roboto', sans-serif; font-weight: 300;
 }
-.font-light { font-weight: 300 !important;}
+.font-light { font-weight: 300;}
 .font-heavy { font-weight: 700 !important;}
 .tag-line {
   margin-top: -0.7rem;
